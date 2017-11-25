@@ -1,0 +1,10 @@
+//in module 
+
+Function SheetName(iSheetNo As Long) As String 
+SheetName = Sheets(iSheetNo).Name 
+End Function
+
+Function SheetNo() 
+Application.Volatile 
+SheetNo = Application.Caller.Parent.Index 
+End Function
